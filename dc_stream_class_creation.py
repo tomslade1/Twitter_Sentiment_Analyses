@@ -1,3 +1,5 @@
+import tweepy
+
 class MyStreamListener(tweepy.StreamListener):
     def __init__(self, api=None):
         super(MyStreamListener, self).__init__()
