@@ -5,7 +5,9 @@
 import tweepy
 import json
 
-json_path = """C:\\Users\\TSL03\\OneDrive - Sky\\Documents\\Python Working Area\\Python_Code\\Project_Notebooks\\Twitter_Sentiment_Analysis\\Twitter_Keys.json"""
+json_path = "\
+C:\\Users\\TSL03\\OneDrive - Sky\\Documents\\Python Working Area\\\
+Python_Code\\Project_Notebooks\\Twitter_Sentiment_Analysis\\Twitter_Keys.json"
 
 with open(json_path) as json_file:
     json_data = json.load(json_file)
