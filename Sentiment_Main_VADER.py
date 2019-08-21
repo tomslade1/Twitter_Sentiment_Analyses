@@ -53,10 +53,10 @@ class TwitterClient(object):
     def get_tweet_sentiment(self, tweet):
         '''
         Utility function to classify sentiment of passed tweet
-        using textblob's sentiment method
+        using nltk's sentiment method  (using VADER)
         '''
         analyser = SentimentIntensityAnalyzer()
-        # create TextBlob object of passed tweet text
+        # create VADER scores of passed tweet text
         score = analyser.polarity_scores(self.clean_tweet(tweet))
         # set sentiment
         if score['compound'] >= 0.05:
